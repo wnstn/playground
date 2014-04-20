@@ -9,5 +9,5 @@ guard 'livereload' do
 end
 
 guard 'shotgun' do
-  watch('playground')
+  watch('playground.rb')
 end
