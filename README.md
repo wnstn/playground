@@ -8,4 +8,4 @@ Want to play around yourself? It's simple to get started after you clone the pro
 2. run `gem install bundle`
 3. run `bundle`
 4. run `guard`
-5. visit http://localhost:9393 in your browser
+5. visit http://localhost:9292 in your browser
