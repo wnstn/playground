@@ -1,0 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* BOURBON AND NEAT VARIABLES */
+/* Media Queries */
+/* TYPOGRAPHY */
+/* COLORS */
+body {
+  background-color: #49e3e7;
+  color: #333333;
+  font-family: "ratio", Georgia, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+h1, h2, h3, h4 {
+  font-family: "prenton-ultra-condensed", Helvetica, Arial, sans-serif; }
+
+a,
+a:active,
+a:link {
+  color: #1981c1; }
+
+a:visited,
+a:hover {
+  color: #136394; }

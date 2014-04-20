@@ -1,0 +1,24 @@
+// Default styles for the site:
+body {
+  background-color: $accent;
+  color: $gray-dark;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: $header-font-family;
+}
+
+a,
+a:active,
+a:link {
+  color: $highlight;
+}
+
+a:visited,
+a:hover {
+  color: darken($highlight, 10%);
+}
