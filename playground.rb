@@ -6,6 +6,7 @@ class Playground < Sinatra::Base
   end
 
   get '/react' do
+    @footer = "footer-react"
     erb :react
   end
 end
