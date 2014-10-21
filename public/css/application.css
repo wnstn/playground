@@ -8,21 +8,21 @@
 /* TYPOGRAPHY */
 /* COLORS */
 body {
-  background-color: #49e3e7;
+  background-color: #663399;
   color: #333333;
-  font-family: "ratio", Georgia, sans-serif;
+  font-family: Georgia, sans-serif;
   font-size: 1em;
   line-height: 1em;
   -webkit-font-smoothing: subpixel-antialiased; }
 
 h1, h2, h3, h4 {
-  font-family: "prenton-ultra-condensed", Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif; }
 
 a,
 a:active,
 a:link {
-  color: #1981c1; }
+  color: white; }
 
 a:visited,
 a:hover {
-  color: #136394; }
+  color: #e6e6e6; }
