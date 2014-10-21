@@ -17,7 +17,7 @@
 <% if @footer.nil? %>
   <%= erb :'partials/footer' %>
 <% else %>
-  <%= erb :'partials/#{@footer}' %>
+  <%= erb :"partials/#{@footer}" %>
 <% end %>
 
 </body>
