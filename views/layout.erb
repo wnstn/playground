@@ -13,6 +13,12 @@
     <%= yield %>
   </section>
 
-<%= erb :'partials/footer' %>
+
+<% if @footer.nil? %>
+  <%= erb :'partials/footer' %>
+<% else %>
+  <%= erb :'partials/#{@footer}' %>
+<% end %>
+
 </body>
 </html>
