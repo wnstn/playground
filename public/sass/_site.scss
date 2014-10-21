@@ -22,3 +22,8 @@ a:visited,
 a:hover {
   color: darken($highlight, 10%);
 }
+
+.welcome {
+  text-align: center;
+  color: $highlight;
+}

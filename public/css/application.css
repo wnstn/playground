@@ -26,3 +26,7 @@ a:link {
 a:visited,
 a:hover {
   color: #e6e6e6; }
+
+.welcome {
+  text-align: center;
+  color: white; }
