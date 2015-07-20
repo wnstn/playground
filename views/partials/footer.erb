@@ -1,3 +1,26 @@
+<% script = @js ? "views/#{@js}" : false %>
+<% app = @app ? 'compiled/app-compiled' : false %>
 
-<script type="text/javascript" src="javascripts/vendor/jquery-2.1.0.js"></script>
-<script type="text/javascript" src="/javascripts/interactions.js"></script>
+<script type="text/javascript">
+  (function(){
+    var scripts = ['compiled/vendor', "<%= app %>", '<%= script %>'];
+
+    function guideUser(){
+      console.log('Hey! Want to make some javascript?');
+      console.log("Create a file named <%= @js %>.js in /public/javascripts/views/");
+      console.log('and it will automatically be included in this view.')
+    }
+
+    scripts.forEach( function(file, i) {
+      if (file !== "false") {
+        var s = document.createElement('script');
+        s.async = false;
+        s.src = "/javascripts/" + file + ".js";
+        if (i > 1) {
+          s.onerror=function(){if(s.onerror)guideUser()}
+        }
+        document.body.appendChild(s);
+      }
+    })
+  })();
+</script>

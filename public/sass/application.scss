@@ -1,5 +1,10 @@
-@import "bourbon/bourbon";
-@import "neat/neat";
+// All vendor files go in /public/sass/vendor
+@import "vendor/breakpoint/breakpoint";
+@import "vendor/normalize/normalize";
 
-@import "variables";
-@import "site";
+// /public/sass/lib is for the things you want to have available always
+@import "lib/variables";
+@import "lib/site";
+
+// any sass file you add in /public/sass/custom will be auto-added
+@import "custom/*.scss";

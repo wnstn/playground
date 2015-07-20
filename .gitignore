@@ -10,7 +10,9 @@ rdoc
 spec/reports
 test/tmp
 test/version_tmp
+node_modules/
 tmp
+.DS_Store
 
 # guard files
 .sass-cache/*

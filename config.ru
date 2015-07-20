@@ -2,14 +2,9 @@ ENV['RACK_ENV'] ||= 'development'
 
 require 'rubygems'
 require 'bundler'
+require 'sinatra'
 
 Bundler.require(:default, ENV['RACK_ENV'].to_sym)
 
-configure :development do
-  require 'rack-livereload'
-  # live reload
-  use Rack::LiveReload, :no_swf => true
-end
-
-require './playground'
+require File.expand_path '../playground.rb', __FILE__
 run Playground
