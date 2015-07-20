@@ -83,7 +83,7 @@ gulp.task('create', function() {
 
   var locations = [
     {path:'./views/', ext:'.erb', text: "<% @app = false %>"},
-    {path:'./public/sass/custom/_', ext:'.scss', text: "#" + argv.name + " { }"},
+    {path:'./public/sass/custom/_', ext:'.scss', text: "." + argv.name + " { }"},
     {path:'./public/javascripts/views/', ext:'.js', text: "(function(){ // write some JS \n })()" } ];
 
   locations.forEach(function(loc) {
