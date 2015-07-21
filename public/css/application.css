@@ -390,4 +390,5 @@ a:visited,
 a:hover {
   color: #e6e6e6; }
 
-/* No files to import found in custom//*.scss */
+.index h1 {
+  color: red; }
