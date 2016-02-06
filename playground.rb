@@ -1,6 +1,7 @@
 require 'sinatra/base'
 
 class Playground < Sinatra::Base
+  enable :logging, :dump_errors, :raise_errors
   set :root, File.dirname(__FILE__)
   set :dev, settings.development?
   set :dump_errors, false
@@ -16,7 +17,7 @@ class Playground < Sinatra::Base
     @wrapperClass = id
     @js = id.gsub(/-/, '_')
 
-    erb id.gsub(/-/, '_').to_sym
+    erb id.to_sym
   end
 
   error Exception do
